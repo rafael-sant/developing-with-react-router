@@ -3,10 +3,12 @@ import Inicio from "./paginas/inicio";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import SobreMim from "./paginas/sobreMim";
+import Menu from "./componentes/Menu";
 
-function App() {
+export default function AppRoutes() {
   return (
     <BrowserRouter>
+      <Menu />
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/sobremim" element={<SobreMim />} />
@@ -15,5 +17,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
