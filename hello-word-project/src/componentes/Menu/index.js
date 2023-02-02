@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import MenuLink from "../MenuLink";
 import styles from "./Menu.module.css";
 
