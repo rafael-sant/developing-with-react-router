@@ -1,3 +1,4 @@
+import BotaoPrincipal from "componentes/BotaoPrincipal";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ export default function PostCard({ post }) {
         <img className={styles.capa} alt="Capa" src={post.imagem} />
         <h2 className={styles.titulo}>{post.titulo}</h2>
 
-        <button className={styles.botaoLer}>Ler</button>
+        <BotaoPrincipal>Ler</BotaoPrincipal>
       </div>
     </Link>
   );
